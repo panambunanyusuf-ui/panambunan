@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven - Premium Coffeeshop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-coffee me-2"></i>Brew Haven
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1495474472645-4cebae6a6cb0?w=1200'); background-size: cover; background-position: center;">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100">
+                <div class="col-lg-6 text-white fade-in">
+                    <h1 class="display-4 fw-bold mb-4">Welcome to Brew Haven</h1>
+                    <p class="lead mb-4">Rasakan pengalaman menikmati kopi premium dengan suasana yang nyaman dan pelayanan terbaik.</p>
+                    <div class="d-flex gap-3">
+                        <a href="menu.html" class="btn btn-primary btn-lg hover-scale">
+                            <i class="fas fa-mug-hot me-2"></i>Lihat Menu
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg hover-scale">
+                            <i class="fas fa-phone me-2"></i>Hubungi Kami
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center fade-in-delayed">
+                    <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=500" alt="Coffee" class="img-fluid hover-float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Produk Unggulan</h2>
+            <div class="row" id="featured-products">
+                <!-- Akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Mengapa Memilih Kami?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <div class="feature-card p-4 rounded hover-lift">
+                        <i class="fas fa-leaf fa-3x text-success mb-3"></i>
+                        <h5>Bahan Premium</h5>
+                        <p>Kami menggunakan biji kopi pilihan dari berbagai daerah terbaik</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <div class="feature-card p-4 rounded hover-lift">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h5>Pelayanan Ramah</h5>
+                        <p>Tim profesional kami siap melayani dengan sepenuh hati</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <div class="feature-card p-4 rounded hover-lift">
+                        <i class="fas fa-home fa-3x text-warning mb-3"></i>
+                        <h5>Suasana Nyaman</h5>
+                        <p>Tempat yang sempurna untuk bekerja, belajar, atau bersantai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h3 class="mb-4">Dapatkan Penawaran Spesial</h3>
+                    <form class="input-group input-group-lg" id="newsletter-form">
+                        <input type="email" class="form-control" placeholder="Masukkan email Anda" required>
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fas fa-coffee me-2"></i>Brew Haven</h5>
+                    <p>Kopi premium dengan cita rasa yang tak terlupakan</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="menu.html" class="text-decoration-none text-light">Menu</a></li>
+                        <li><a href="contact.html" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Follow Kami</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2026 Brew Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
